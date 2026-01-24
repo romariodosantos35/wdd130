@@ -1,6 +1,10 @@
 main { max-width: 840px; 
     margin: 0 auto; 
 }
+nav { 
+    background-color: steelblue; 
+    padding: 10px; 
+}
  aside {
     width: 20rem; 
     margin: 1rem; 
