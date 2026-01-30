@@ -37,10 +37,19 @@ footer {
     margin: 0 auto;
 }
 
+footer {
+    background-color: var(--accent3-color);
+    color: var(--accent2-color);
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+h2 {
+    border-bottom: 3px solid var(--accent3-color);
 }
 
 nav,
