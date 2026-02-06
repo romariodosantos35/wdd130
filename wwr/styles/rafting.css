@@ -30,6 +30,69 @@ body {
     line-height: 1.6;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    width: 840px;
+    margin: 0 auto;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+header img {
+    height: 70px;
+    width: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header nav a {
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--accent3-color);
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all 0.25s ease-in-out;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header nav a.active {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 3px;
+}
+
+.history {
+    margin: 2rem 0;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.history-grid img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 header,
 main,
 footer {
@@ -40,6 +103,24 @@ footer {
 footer {
     background-color: var(--accent3-color);
     color: var(--accent2-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    /* space between text and icons */
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+    /* spacing between icons */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
 }
 
 h1,
