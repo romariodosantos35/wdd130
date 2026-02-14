@@ -224,7 +224,7 @@ article {
     justify-content: center;
 }
 
-.map-container iframe {
+map-container iframe {
     width: 100%;
     max-width: 700px;
     height: 350px;
