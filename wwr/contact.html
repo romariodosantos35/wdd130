@@ -78,17 +78,35 @@
                         <input type="radio" name="inquiry" value="suggestion">
                         Website Suggestion
                     </label>
-                </fieldset>
+                    <fieldset>
+                        <legend>What is your inquiry about?</legend>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="inq-general">
+                            <input type="radio" id="inq-general" name="inquiry" value="general"
+                              required>
+                            General Inquiry
+                        </label>
 
-                <label class="newsletter">
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                        <label for="inq-reservation">
+                            <input type="radio" id="inq-reservation" name="inquiry"
+                              value="reservation">
+                            Reservation Question
+                        </label>
 
-                <button type="submit">Get in Touch!</button>
+                        <label for="inq-suggestion">
+                            <input type="radio" id="inq-suggestion" name="inquiry"
+                              value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <label class="newsletter" for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+
+                    <button type="submit">Get in Touch!</button>
             </form>
         </section>
 
