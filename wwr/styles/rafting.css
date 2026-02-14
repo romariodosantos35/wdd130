@@ -191,22 +191,33 @@ article {
 }
 
 /* ================================
-   CONTACT PAGE — NEW STYLES
+   CONTACT PAGE
 ================================ */
 
-/* Company Info Section */
-.company-info {
+/* Shared card-style container */
+.card {
+    background-color: var(--accent2-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    margin: 1.5rem 0;
+}
+
+/* Apply shared card style */
+.company-info,
+.contact-form {
     background-color: var(--accent2-color);
     padding: 1.5rem;
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+/* Company Info */
 .company-info p {
     margin: 0.4rem 0;
 }
 
-/* Map Container */
+/* Map */
 .map-container {
     margin-top: 1rem;
     display: flex;
@@ -222,14 +233,7 @@ article {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* Contact Form Section */
-.contact-form {
-    background-color: var(--accent2-color);
-    padding: 1.5rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
+/* Contact Form */
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -238,7 +242,6 @@ article {
 
 .contact-form label {
     font-weight: bold;
-    margin-bottom: 0.25rem;
 }
 
 .contact-form input[type="text"],
@@ -261,10 +264,6 @@ article {
 .contact-form legend {
     font-weight: bold;
     color: var(--primary-color);
-}
-
-.contact-form input[type="radio"] {
-    margin-right: 0.4rem;
 }
 
 .contact-form .newsletter {
