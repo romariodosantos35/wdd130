@@ -313,3 +313,55 @@ article {
     font-weight: bold;
     color: var(--primary-color);
 }
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px black;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.cta-button {
+    background: #0a6ebd;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
