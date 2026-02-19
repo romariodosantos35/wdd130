@@ -30,6 +30,9 @@ body {
     line-height: 1.6;
 }
 
+/* ================================
+   HEADER
+================================ */
 header {
     display: flex;
     justify-content: space-between;
@@ -76,61 +79,14 @@ header nav a.active {
     padding-bottom: 3px;
 }
 
-.history {
-    margin: 2rem 0;
-}
-
-.history-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.history-grid img {
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
+/* ================================
+   LAYOUT
+================================ */
 header,
 main,
 footer {
     width: 840px;
     margin: 0 auto;
-}
-
-footer {
-    background-color: var(--accent3-color);
-    color: var(--accent2-color);
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    /* space between text and icons */
-    align-items: center;
-}
-
-.socialmedia {
-    display: flex;
-    gap: 1rem;
-    /* spacing between icons */
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: auto;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-h2 {
-    border-bottom: 3px solid var(--accent3-color);
 }
 
 nav,
@@ -141,10 +97,9 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* ================================
+   HERO (MERGED VERSION)
+================================ */
 .hero {
     position: relative;
 }
@@ -155,6 +110,7 @@ article {
     display: block;
 }
 
+/* Option A: Centered top title */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -168,6 +124,7 @@ article {
     border-radius: 4px;
 }
 
+/* Option A: Article box */
 .hero article {
     position: absolute;
     bottom: 40px;
@@ -190,12 +147,83 @@ article {
     border: 2px solid #fff;
 }
 
+/* Option B: Bottom-left large title */
+.hero-title {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px black;
+}
+
+/* ================================
+   HISTORY SECTION
+================================ */
+.history {
+    margin: 2rem 0;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.history-grid img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    background-color: var(--accent3-color);
+    color: var(--accent2-color);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* ================================
+   TYPOGRAPHY
+================================ */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h2 {
+    border-bottom: 3px solid var(--accent3-color);
+}
+
 /* ================================
    CONTACT PAGE
 ================================ */
-
-/* Shared card-style container */
-.card {
+.card,
+.company-info,
+.contact-form {
     background-color: var(--accent2-color);
     padding: 1.5rem;
     border-radius: 6px;
@@ -203,21 +231,10 @@ article {
     margin: 1.5rem 0;
 }
 
-/* Apply shared card style */
-.company-info,
-.contact-form {
-    background-color: var(--accent2-color);
-    padding: 1.5rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-/* Company Info */
 .company-info p {
     margin: 0.4rem 0;
 }
 
-/* Map */
 .map-container {
     margin-top: 1rem;
     display: flex;
@@ -233,7 +250,6 @@ article {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* Contact Form */
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -288,7 +304,9 @@ article {
     color: var(--accent3-color);
 }
 
-/* Employee Profiles */
+/* ================================
+   EMPLOYEE PROFILES
+================================ */
 .employees {
     margin-top: 2rem;
 }
@@ -314,25 +332,9 @@ article {
     color: var(--primary-color);
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-title {
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
-    color: white;
-    font-size: 3rem;
-    text-shadow: 2px 2px 6px black;
-}
-
+/* ================================
+   TRIPS PAGE
+================================ */
 .trip-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
